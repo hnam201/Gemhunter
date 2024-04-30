@@ -58,8 +58,7 @@ class Minesweeper():
         print("--" * self.width + "-")
 
     def is_mine(self, cell):
-        i, j = cell
-        return self.board[i][j]
+        return cell in self.mines
 
     def nearby_mines(self, cell):
         """
